@@ -1,0 +1,634 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Section 1 - Home Page*/
+/* Styles for slider */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    color: #000000; /* Set text color to white */
+}
+  
+.slide h1:first-child{
+    margin-top: 70px;
+}
+
+.slide h1{
+    color: white;
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+
+
+/* Add a class for the initial zoomed-in effect */
+.initial-zoom-effect {
+    animation: initialZoomAnimation 1s ease-in-out forwards; /* Apply initial zoom animation */
+}
+
+/* Add a class for the zoom-out effect */
+.zoom-out-effect {
+    animation: zoomOutAnimation 2s ease-in-out forwards; /* Apply zoom-out animation */
+}
+
+@keyframes zoomOutAnimation {
+    0% {
+        background-size: 120%; /* Start with zoomed-in size */
+    }
+    100% {
+        background-size: 105%;/* End with original size */
+    }
+}
+
+/* Button styles */
+.sec-1-btn-1 {
+    border: 1px solid white;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.sec-1-btn-1:hover {
+    background-color: #5a5958;
+}
+
+/* Menu styles */
+nav {
+    background-color: transparent;
+    color: #000000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(230, 230, 219);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+.menu {
+    display: flex;
+    padding: 50px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 5px;
+    margin-right: 1.5rem;
+    position: relative;
+    font-size: 18px;
+}
+
+.menu a:hover{
+    color: yellow;
+}
+
+ 
+.menu a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0; /* Start at the beginning of the word */
+    bottom: -5px;
+    width: 70%; /* Cover the entire width of the link */
+    height: 2px;
+    background-color: yellow;
+}
+
+/* Logo styles */
+.logo {
+    padding-top: 20px; /* Adjust top padding */
+    padding-left: 20px; /* Adjust left padding */
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+/*section 2*/
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .whatsapp-icon a {
+    display: block;
+    width: 55px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background-color: #25d366; /* WhatsApp green */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .whatsapp-icon a:hover {
+    transform: scale(1.1);
+  }
+  
+  .whatsapp-icon i {
+    color: #fff;
+    font-size: 30px; /* Adjust size as needed */
+  }
+
+  /* cookie*/
+
+#cookie-icon i {
+    color: #b5b5b5;
+}
+
+#cookie-consent {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+#cookie-icon {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#cookie-box {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 0;
+    background: #cac8c8;
+    border: 1px solid #636363;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Initially hide the cookie box */
+}
+
+.hidden {
+    display: none; /* Hide the cookie box when 'hidden' class is added */
+}
+
+#cookie-box h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+#cookie-box p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#cookie-box button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cookie-box button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+#cookie-box button:focus {
+    outline: none;
+}
+
+
+/*section 2 home page */
+
+/* Style for the entire section */
+#Home-page-section-2 {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #000; /* Set background color to black */
+}
+
+/* Style for the testimonial */
+.bio {
+    margin-bottom: 50px;
+}
+
+.bio h3 {
+    font-size: 24px;
+    color: #fff; /* Set text color to white */
+    margin-bottom: 10px;
+}
+
+.bio i {
+    font-size: 48px;
+    color: #ff5722;
+}
+
+.bio p {
+    font-size: 18px;
+    color: #ccc; /* Set text color to light gray */
+}
+
+/* Style for the reviews slider container */
+.reviews-slider-container {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 0 90px; /* Add padding to create gaps at the ends */
+}
+
+/* Style for the reviews slider */
+.reviews-slider {
+    display: flex;
+    overflow: hidden; /* Hide overflow to remove scrollbar */
+    margin-left: -20px; /* Adjust for negative margin */
+    margin-right: -20px; /* Adjust for negative margin */
+}
+
+
+.person-review {
+    flex: 0 0 auto;
+    width: calc(100% / 3); /* Set width to fit 3 reviews in one row */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.person-review img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.person-review h6 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.person-review p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #FFD700;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style for the See More Reviews button */
+.sec-2-btn-1 button {
+    padding: 10px 20px;
+    background-color: #FF5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+}
+
+.sec-2-btn-1 button:hover {
+    background-color: #e64a19;
+}
+
+/* Style for the buttons to navigate the reviews */
+/* Add margin between review boxes */
+.person-review {
+    flex: 0 0 auto;
+    width: calc(33.3333% - 20px); /* Adjust width to fit three reviews with gap */
+    margin-right: 20px; /* Add margin between review boxes */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Update styles for navigation buttons */
+.slider-button {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+    transition: background-color 0.3s;
+    z-index: 1; /* Ensure buttons appear above review boxes */
+}
+
+.prev-button {
+    left: 10px; /* Position the previous button to the left */
+}
+
+.next-button {
+    right: 10px; /* Position the next button to the right */
+}
+
+/* Detail styling */
+.detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.detail-part1,
+.detail-part2,
+.detail-part3 {
+    flex-basis: calc(33.3333% - 20px);
+    margin-bottom: 20px;
+    padding: 30px 5px; /* Add padding */
+    border: 1px solid #ffffff; /* Add border */
+    background-color: #adadad;
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.detail-part1:hover,
+.detail-part2:hover,
+.detail-part3:hover {
+    transform: translateY(-15px); /* Move the element up on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    background-color: #d2d1d1;
+}
+
+.detail-part1 div,
+.detail-part2 div,
+.detail-part3 div {
+    margin-bottom: 10px;
+}
+
+.detail-part1 h4,
+.detail-part2 h4,
+.detail-part3 h4 {
+    font-size: 40px;
+    font-family: Arial, sans-serif; /* Set font family for headings */
+    color: #333; /* Set color for headings */
+    margin-bottom: 10px; /* Add margin bottom */
+}
+
+.detail-part1 p,
+.detail-part2 p,
+.detail-part3 p {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, sans-serif; /* Set font family for paragraphs */
+    color: #666; /* Set color for paragraphs */
+    margin-bottom: 10px; /* Add margin bottom */
+}
+
+.detail-part1:hover h4,
+.detail-part2:hover h4,
+.detail-part3:hover h4,
+.detail-part1:hover p,
+.detail-part2:hover p,
+.detail-part3:hover p {
+    color: #474747; /* Change color on hover */
+}
+
+.person-review .review-content {
+    max-height: 3.6em; /* Three lines of text with ellipsis */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.person-review .review-content.expand {
+    max-height: none; /* Show all content when expanded */
+}
+
+.person-review .read-more {
+    display: block;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.person-review .read-more:hover {
+    text-decoration: underline;
+}
+
+/*section 3 home page*/
+#Home-page-section-3 {
+    background-color: #302f2f;
+    text-align: center;
+    overflow: hidden; /* Remove scrollbar */
+    padding: 0 70px; /* Add padding to push categories away from edges */
+    position: relative; /* Positioning context for absolute positioning */
+}
+
+.bio {
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.main-categories {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.sec-3-btn-1,
+.sec-3-btn-2,
+.sec-3-btn-3,
+.sec-3-btn-4 {
+    border: 1px solid rgb(209, 126, 1);
+    background: rgb(209, 126, 1);
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+.btn-categories {
+margin-bottom: 30px;
+}
+
+.sec-3-btn-1:hover,
+.sec-3-btn-2:hover,
+.sec-3-btn-3:hover,
+.sec-3-btn-4:hover {
+    color: rgb(209, 126, 1);
+    background: #ffffff;
+    border: 1px solid white;
+}
+
+.categories-container {
+    overflow-x: hidden;
+    margin: 0 auto;
+    position: relative; /* Ensure positioning context for absolute buttons */
+}
+
+.category-slider {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    overflow: hidden; /* Hide scrollbar */
+}
+
+.category {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #f9f9f9;
+    justify-content: start;
+    text-align: left;
+    align-items: flex-start;
+    margin-top: 30px;
+    
+}
+
+.category:last-child {
+    margin-right: 0;
+}
+
+.category h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.category p {
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.category:hover {
+    transform: translateY(-30px); /* Move category 5px upwards on hover */
+}
+.category {
+    /* Other styles */
+    transition: transform 0.3s ease; /* Smooth transition for transform property */
+}
+
+
+
+
+.move-btn {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+    transition: background-color 0.3s;
+    z-index: 1; /* Ensure buttons appear above review boxes */
+    /* Initially hide buttons */
+}
+
+.move-btn-left {
+    left: 20px; /* Position the previous button to the left */
+}
+
+.move-btn-right {
+    right: 20px; /* Position the next button to the right */
+}
+
+
+
+
+
+.bg-wallpaper-of-aprtment {
+    /* Specify the path to your background image */
+    background-image: url('./images/slider1.jpg');
+
+    /* Set background size to cover the entire element */
+    background-size: cover;
+
+    /* Optionally, you can set other properties like background repeat and position */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    text-align: center;
+}
+
+.bg-wallpaper-of-aprtment  h6, .bg-wallpaper-of-aprtment p{
+    color: white;
+     border: 1px solid white;
+     border-left: none;
+     border-right: none;
+     font-size: 22px;
+}
+
+
+
+/*/* Adjustments for one-line class */
+.ine-one-line {
+    /* Display inline-flex to keep elements in one line */
+    display: flex;
+    flex-direction: row;
+    /* Align items to the center horizontally and vertically */
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Adjustments for the icon and paragraph within one-line class */
+.ine-one-line i, .ine-one-line p {
+    /* Add margin for spacing between icon and paragraph */
+    margin: 0 5px;
+    font-weight: bold;
+}
+.ine-one-line i{
+    font-size: 10px;
+    color: #626262;
+}
+
+.sec-3-btn-5 {
+    padding: 10px 20px;
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+.sec-3-btn-5:hover {
+    border: 1px solid black;
+    background: black;
+    color: white;
+}
