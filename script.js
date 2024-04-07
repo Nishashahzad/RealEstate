@@ -4,13 +4,12 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     const slides = document.querySelectorAll('.slide');
-    const section = document.querySelector('#Home-page-section-1'); // Select the section containing the slider
-    const backgroundImages = ['./images/slider1.jpg', './images/slider2.jpg', './images/slider3.jpg']; // Replace with your background image URLs
-    let currentSlide = 0;
-    let isAnimating = false; // Flag to prevent multiple animations
+    const section = document.querySelector('#Home-page-section-1'); 
+    const backgroundImages = ['./images/slider1.jpg', './images/slider2.jpg', './images/slider3.jpg']; 
+    let isAnimating = false; 
 
     function goToSlide(index) {
-        // Prevent animation if already animating
+       
         if (isAnimating) return;
         isAnimating = true;
 
@@ -19,21 +18,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         currentSlide = index;
         
-        // Change background image based on the current slide
         section.style.backgroundImage = `url('${backgroundImages[currentSlide]}')`;
-        section.classList.remove('zoom-out-effect'); // Remove zoom-out effect class
+        section.classList.remove('zoom-out-effect'); 
         setTimeout(() => {
-            section.classList.add('zoom-out-effect'); // Add zoom-out effect class after a short delay
-            isAnimating = false; // Reset animation flag
-        }, 50); // Adjust the delay as needed for the animation to reset properly
+            section.classList.add('zoom-out-effect'); 
+            isAnimating = false; 
+        }, 50); 
     }
 
     setInterval(() => {
         currentSlide = (currentSlide + 1) % slides.length;
         goToSlide(currentSlide);
-    }, 3000); // Change slide every 2 seconds
+    }, 3000); 
 
-    // Set initial background image size to cover the entire section
     section.style.backgroundSize = 'cover';
     section.style.backgroundRepeat = 'no-repeat';
     section.style.backgroundPosition = 'center';
@@ -46,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener('DOMContentLoaded', function() {
     const cookieBox = document.getElementById('cookie-box');
 
-    // Show the cookie box when the DOM content is loaded
     cookieBox.classList.remove('hidden');
 
     const cookieIcon = document.getElementById('cookie-icon');
@@ -58,12 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     acceptBtn.addEventListener('click', function() {
-        // Add code to set cookie to accept
         cookieBox.classList.add('hidden');
     });
 
     rejectBtn.addEventListener('click', function() {
-        // Add code to handle rejection, for example, disable some features
         cookieBox.classList.add('hidden');
     });
 });
@@ -77,14 +71,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     prevButton.addEventListener('click', function() {
         reviewsSlider.scrollBy({
-            left: -300, // Adjust scroll distance as needed
+            left: -300, 
             behavior: 'smooth'
         });
     });
 
     nextButton.addEventListener('click', function() {
         reviewsSlider.scrollBy({
-            left: 300, // Adjust scroll distance as needed
+            left: 300, 
             behavior: 'smooth'
         });
     });
@@ -98,8 +92,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     readMoreButtons.forEach(function (button) {
         button.addEventListener('click', function () {
-            var reviewContent = this.previousElementSibling; // Get the review content element
-            reviewContent.classList.toggle('expand'); // Toggle expand class
+            var reviewContent = this.previousElementSibling; 
+            reviewContent.classList.toggle('expand'); 
             if (this.textContent === 'Read less') {
                 this.textContent = 'Read more';
             } else {
@@ -128,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // JavaScript function to move categories left or right
 function moveCategories(direction) {
     var categoriesContainer = document.querySelector('.category-slider');
-    var scrollDistance = 300; // Adjust as needed
+    var scrollDistance = 300; 
 
     if (direction === 'left') {
         categoriesContainer.scrollBy({
@@ -142,6 +136,7 @@ function moveCategories(direction) {
         });
     }
 }
+
 
 
 
