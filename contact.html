@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BROWN WOOD - Real Estate L.L.C.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2b6ad1027d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="./images/logo.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section id="Blog-page-section-1">
+        <nav>
+            <div class="main-logo">
+                <img src="./images/logo.webp" alt="">
+            </div>
+            <div class="main-menu">
+                <a href="home.html">HOME</a>
+                <a href="blog.html">BLOG</a>
+                <a href="about-us.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <button id="menu-toggle" title="">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div class="blog-content">
+            <h1>CONTACT US</h1>
+            <a href="#contact-section-1"><button class="sec-1-btn-1">Fill Out The Form below!</button></a>
+        </div>
+        <div class="modal" id="menu-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <a href="home.html">HOME</a>
+                <a href="blog.html">BLOG</a>
+                <a href="about-us.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+    </section>
+    <section id="Home-page-wappIcon-section">
+        <div class="whatsapp-icon">
+            <a href="https://api.whatsapp.com/send?phone=923302687508" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
+    <div id="cookie-consent">
+        <button id="cookie-icon"><i class="fas fa-cookie-bite"></i></button>
+        <div id="cookie-box" class="hidden">
+            <h2>Cookie Policy</h2>
+            <p>Here are the terms and policies regarding the use of cookies.</p>
+            <button id="accept-btn">Accept</button>
+            <button id="reject-btn">Reject</button>
+        </div>
+    </div>
+    <section id="contact-section-1">
+        <div class="contact-form">
+            <h1>REACH US</h1>
+            <form action="process_form.php" method="post">
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-field">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Ex: +971 56 451 2743" required>
+                </div>
+                <div class="input-field">
+                    <label for="help">What can I help you with?</label>
+                    <select id="help" name="help" required>
+                        <option value="I am looking to invest">I am looking to invest</option>
+                        <option value="I am looking for a self use property">I am looking for a self use property</option>
+                    </select>
+                </div>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+    <section id="Home-page-section-9">
+        <div>
+            <h4>KEEP IN TOUCH</h4>
+            <div class="social-media-links">
+                <a href="https://www.instagram.com/YourPageName" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/YourPageName" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/YourTwitterHandle" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/user/YourChannelName" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/YourProfileName" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="google-map">
+        <h1>Google Map Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.8163053714416!2d55.17599157394481!3d25.108078835307264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b11be9093bd%3A0x12953ed91863f859!2sSidra%20tower!5e0!3m2!1sen!2s!4v1718453903693!5m2!1sen!2s" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>VISIT US</h5>
+                <p>Office Address: Sidra Tower - 11th Floor - Sheikh Zayed Rd - Al Sufouh 1 - Dubai</p>
+                <p>Phone: <a href="tel:+97148866265">+971 4 886 6265</a></p>
+                <p>Email: <a href="mailto:connect@revorealty.ae">connect@revorealty.ae</a></p>
+            </div>
+            <div class="footer-section">
+                <h5>OPENING HOURS</h5>
+                <p>Monday - Saturday:</p>
+                <p>10:00AM - 07:00PM</p>
+            </div>
+            <div class="footer-section">
+                <p>We do things differently at Revo. We don’t chase the high commission projects, overpromise and
+                    underdeliver, or add unnecessary fees.</p>
+            </div>
+            <div class="footer-section">
+                <h5>LINKS</h5>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section subscribe">
+                <input type="email" placeholder="Your Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2023 Revo Realty. All Rights Reserved</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

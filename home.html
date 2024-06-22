@@ -7,6 +7,7 @@
     <title>BROWN WOOD - Real Estate L.L.C.</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2b6ad1027d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="./images/logo.webp">
     <script src="script.js"></script>
 </head>
@@ -14,16 +15,28 @@
 <body>
     <section id="Home-page-section-1">
         <nav>
-            <div class="logo">
+            <div class="main-logo">
                 <img src="./images/logo.webp" alt="">
             </div>
-            <div class="menu">
+            <div class="main-menu">
                 <a href="home.html">HOME</a>
                 <a href="blog.html">BLOG</a>
                 <a href="about-us.html">ABOUT US</a>
                 <a href="contact.html">CONTACT</a>
             </div>
+            <button id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
+        <div class="modal" id="menu-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <a href="home.html">HOME</a>
+                <a href="blog.html">BLOG</a>
+                <a href="about-us.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
         <div class="slider-container">
             <div class="slides">
                 <div class="slide">
@@ -199,7 +212,7 @@
                 <button class="slider-button next-button">&#8250;</button>
             </div>
             <div class="sec-2-btn-1">
-                <button>SEE MORE REVIEWS</button>
+                <button onclick="openInNewTab()">SEE MORE REVIEWS</button>
             </div>
             <div class="detail">
                 <div class="detail-part1">
@@ -433,7 +446,7 @@
                 <a href="about-us.html"><button class="section-4-btn-1">About US</button></a>
             </div>
             <div>
-                <video controls autoplay>
+                <video autoplay muted>>
                     <source src="./images/video-1.mp4" type="video/mp4">
                 </video>
             </div>
@@ -452,8 +465,8 @@
     </section>
     <section id="Home-page-section-5">
         <div>
-            <video controls autoplay>
-                <source src="./images/video-2.mp4" type="video/mp4">
+            <video autoplay muted>
+                <source src="./images/realEstimate™ _ TV Commercial _ Spring 2023 _ realestate.com.au.mp4" type="video/mp4">
             </video>
         </div>
     </section>
@@ -475,27 +488,84 @@
         </div>
     </section>
     <section id="Home-page-section-8">
-        <div>
+        <div class="section-header">
             <h2>OUR PARTNERS</h2>
         </div>
-        <div>
-            <div>
-                <img src="./images/partner-1.png" alt="">
-                <img src="./images/partner-2.png" alt="">
-                <img src="./images/partner-3.png" alt="">
-                <img src="./images/partner-4.png" alt="">
-                <img src="./images/partner-5.png" alt="">
-                <img src="./images/partner-6.png" alt="">
-                <img src="./images/partner-7.png" alt="">
-                <img src="./images/partner-8.png" alt="">
-                <img src="./images/partner-9.png" alt="">
-                <img src="./images/partner-10.png" alt="">
-                <img src="./images/partner-1.png" alt="">
-                <img src="./images/partner-2.png" alt="">
-                <img src="./images/partner-3.png" alt="">
+        <div class="partners-container">
+            <div class="partners-slider">
+                <div class="partners-track">
+                    <img src="./images/partner-1.png" alt="Partner 1">
+                    <img src="./images/partner-2.png" alt="Partner 2">
+                    <img src="./images/partner-1.png" alt="Partner 3">
+                    <img src="./images/partner-4.png" alt="Partner 4">
+                    <img src="./images/partner-1.png" alt="Partner 5">
+                    <img src="./images/partner-1.png" alt="Partner 6">
+                    <img src="./images/partner-1.png" alt="Partner 7">
+                    <img src="./images/partner-8.png" alt="Partner 8">
+                    <img src="./images/partner-9.png" alt="Partner 9">
+                    <img src="./images/partner-1.png" alt="Partner 10">
+                    <!-- Duplicate images for seamless looping -->
+                    <img src="./images/partner-1.png" alt="Partner 1">
+                    <img src="./images/partner-2.png" alt="Partner 2">
+                    <img src="./images/partner-1.png" alt="Partner 3">
+                    <img src="./images/partner-4.png" alt="Partner 4">
+                    <img src="./images/partner-1.png" alt="Partner 5">
+                    <img src="./images/partner-1.png" alt="Partner 6">
+                    <img src="./images/partner-1.png" alt="Partner 7">
+                    <img src="./images/partner-8.png" alt="Partner 8">
+                    <img src="./images/partner-9.png" alt="Partner 9">
+                    <img src="./images/partner-1.png" alt="Partner 10">
+                </div>
             </div>
         </div>
     </section>
+    <section id="Home-page-section-9">
+        <div>
+            <h4>KEEP IN TOUCH</h4>
+            <div class="social-media-links">
+                <a href="https://www.instagram.com/YourPageName" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/YourPageName" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/YourTwitterHandle" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/user/YourChannelName" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/YourProfileName" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>VISIT US</h5>
+                <p>Office Address: Sidra Tower - 11th Floor - Sheikh Zayed Rd - Al Sufouh 1 - Dubai</p>
+                <p>Phone: <a href="tel:+97148866265">+971 4 886 6265</a></p>
+                <p>Email: <a href="mailto:connect@revorealty.ae">connect@revorealty.ae</a></p>
+            </div>
+            <div class="footer-section">
+                <h5>OPENING HOURS</h5>
+                <p>Monday - Saturday:</p>
+                <p>10:00AM - 07:00PM</p>
+            </div>
+            <div class="footer-section">
+                <p>We do things differently at Revo. We don’t chase the high commission projects, overpromise and underdeliver, or add unnecessary fees.</p>
+            </div>
+            <div class="footer-section">
+                <h5>LINKS</h5>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section subscribe">
+                <input type="email" placeholder="Your Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2023 Revo Realty. All Rights Reserved</p>
+        </div>
+    </footer>
+    
 </body>
 
 </html>

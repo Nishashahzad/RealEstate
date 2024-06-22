@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BROWN WOOD - Real Estate L.L.C.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2b6ad1027d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="./images/logo.webp">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section id="Blog-page-section-1">
+        <nav>
+            <div class="main-logo">
+                <img src="./images/logo.webp" alt="">
+            </div>
+            <div class="main-menu">
+                <a href="home.html">HOME</a>
+                <a href="blog.html">BLOG</a>
+                <a href="about-us.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <button id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div class="blog-content">
+            <h1>About US</h1>
+            <a href="#contact-section-1"><button class="sec-1-btn-1">Get Free Consultation</button></a>
+        </div>
+        <div class="modal" id="menu-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <a href="home.html">HOME</a>
+                <a href="blog.html">BLOG</a>
+                <a href="about-us.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+    </section>
+    <section id="Home-page-wappIcon-section">
+        <div class="whatsapp-icon">
+            <a href="https://api.whatsapp.com/send?phone=923302687508" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
+    <div id="cookie-consent">
+        <button id="cookie-icon"><i class="fas fa-cookie-bite"></i></button>
+        <div id="cookie-box" class="hidden">
+            <h2>Cookie Policy</h2>
+            <p>Here are the terms and policies regarding the use of cookies.</p>
+            <button id="accept-btn">Accept</button>
+            <button id="reject-btn">Reject</button>
+        </div>
+    </div>
+    <section id="about-bio">
+        <div>
+            <h1>WELCOME TO REVO</h1>
+            <p>Revo Realty is a platform to turn your dreams of having the choicest home into actuality. With the help
+                of our passionate group, we convert imaginations into reality by working on planned growth and
+                commendable foresight. Our objective is to execute our possessions and acquaintance by providing an
+                unparalleled standard of living. Our backup team is professionals who strive hard to serve their clients
+                by looking for the prospect and adding worth to your speculation by creating a standard in reliability
+                and service.</p>
+        </div>
+        <div class="about-bio-sep">
+            <i class="fa-brands fa-squarespace"></i>
+            <div>
+                <h4>IN TERMS OF SPREADING LOVE & HUMANITY</h4>
+                <p>We feel proud to work for underprivileged people by donating 1% of your property’s agreement value to
+                    charity and giving them a shelter to live in.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about-page-section-1">
+        <div class="about-us-section-1">
+            <div class="about-bio">
+                <h3>FEATURED BY GARY VEE</h3>
+                <p>The REVO Family experienced an immensely joyous occasion as our unique marketing approach caught the
+                    attention of the renowned influencer, GARY VEE. It marked a truly blissful moment for all of us.</p>
+                <a href="about-us.html"><button class="section-4-btn-1">About US</button></a>
+            </div>
+            <div>
+                <img src="./images/about.jpg">
+            </div>
+        </div>
+    </section>
+    <section id="Home-page-section-3">
+        <div class="bio">
+            <h3>FEATURED PROPERTIES</h3>
+            <i class="fa-brands fa-squarespace"></i>
+            <p>Below are some of our select projects that offer a high return on investment</p>
+        </div>
+        <button class="move-btn move-btn-left" onclick="moveCategories('left')">&lt;</button>
+        <div class="main-categories">
+
+            <div class="categories-container">
+                <div class="btn-categories">
+                    <button class="sec-3-btn-1" onclick="filterCategories('All')">All</button>
+                    <button class="sec-3-btn-2" onclick="filterCategories('Apartments')">Apartments</button>
+                    <button class="sec-3-btn-3" onclick="filterCategories('TownHouse')">TownHouses</button>
+                    <button class="sec-3-btn-4" onclick="filterCategories('Villa')">Villas</button>
+                </div>
+                <div class="categories category-slider">
+                    <div class="category" data-category="Apartments">
+                        <div class="bg-wallpaper-of-aprtment">
+                            <div>
+                                <h6>Starting</h6>
+                                <p>AED 2.0M</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="ine-one-line">
+                                <i class="fa-solid fa-square"></i>
+                                <p>APARTMENTS</p>
+                            </div>
+                            <h2>AL HABTOOR TOWER</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum
+                                aliquid sed quos modi! Accusamus aliquid sequi dicta facilis ipsum
+                                ex esse doloribus? Molestiae ipsam eveniet ex modi doloremque
+                                mollitia.</p>
+                            <button class="sec-3-btn-5" onclick="location.href='apartments.html'">Read More...</button>
+                        </div>
+                    </div>
+                    <div class="category" data-category="TownHouse">
+                        <div class="bg-wallpaper-of-aprtment">
+                            <h6>Starting</h6>
+                            <p>AED .30M</p>
+                        </div>
+                        <div>
+                            <div class="ine-one-line">
+                                <i class="fa-solid fa-square"></i>
+                                <p>TOWNHOUSE</p>
+                            </div>
+                            <h2>AL HATIM</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum
+                                aliquid sed quos modi! Accusamus aliquid sequi dicta facilis ipsum
+                                ex esse doloribus? Molestiae ipsam eveniet ex modi doloremque
+                                mollitia.</p>
+                            <button class="sec-3-btn-5" onclick="location.href='apartments.html'">Read More...</button>
+                        </div>
+                    </div>
+                    <div class="category" data-category="TownHouse">
+                        <div class="bg-wallpaper-of-aprtment">
+                            <h6>Starting</h6>
+                            <p>AED 4.0M</p>
+                        </div>
+                        <div>
+                            <div class="ine-one-line"><i class="fa-solid fa-square"></i>
+                                <p>TOWNHOUSE</p>
+                            </div>
+                            <h2>HABIB</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum
+                                aliquid sed quos modi! Accusamus aliquid sequi dicta facilis ipsum
+                                ex esse doloribus? Molestiae ipsam eveniet ex modi doloremque
+                                mollitia.</p>
+                            <button class="sec-3-btn-5" onclick="location.href='apartments.html'">Read More...</button>
+                        </div>
+                    </div>
+                    <div class="category" data-category="Apartments">
+                        <div class="bg-wallpaper-of-aprtment">
+                            <h6>Starting</h6>
+                            <p>AED 2.0M</p>
+                        </div>
+                        <div>
+                            <div class="ine-one-line"><i class="fa-solid fa-square"></i>
+                                <p>APARTMENTS</p>
+                            </div>
+                            <h2>AL HABTOOR TOWER</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum
+                                aliquid sed quos modi! Accusamus aliquid sequi dicta facilis ipsum
+                                ex esse doloribus? Molestiae ipsam eveniet ex modi doloremque
+                                mollitia.</p>
+                            <button class="sec-3-btn-5" onclick="location.href='apartments.html'"">Read More...</button>
+                    </div>
+                </div>
+                <div class=" category" data-category="Villa">
+                                <div class="bg-wallpaper-of-aprtment">
+                                    <h6>Starting</h6>
+                                    <p>AED 2.0M</p>
+                                </div>
+                                <div>
+                                    <div class="ine-one-line"><i class="fa-solid fa-square"></i>
+                                        <p>Villa</p>
+                                    </div>
+                                    <h2>SIX STAR</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum
+                                        aliquid sed quos modi! Accusamus aliquid sequi dicta facilis ipsum
+                                        ex esse doloribus? Molestiae ipsam eveniet ex modi doloremque
+                                        mollitia.</p>
+                                    <button class="sec-3-btn-5" onclick="location.href='apartments.html'">Read
+                                        More...</button>
+                                </div>
+                        </div>
+                        <div class="category" data-category="Apartments">
+                            <div class="bg-wallpaper-of-aprtment">
+                                <h6>Starting</h6>
+                                <p>AED 2.0M</p>
+                            </div>
+                            <div>
+                                <div class="ine-one-line"><i class="fa-solid fa-square"></i>
+                                    <p>APARTMENTS</p>
+                                </div>
+                                <h2>AL HABTOOR TOWER</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum
+                                    aliquid sed quos modi! Accusamus aliquid sequi dicta facilis ipsum
+                                    ex esse doloribus? Molestiae ipsam eveniet ex modi doloremque
+                                    mollitia.</p>
+                                <button class="sec-3-btn-5" onclick="location.href='apartments.html'">Read
+                                    More...</button>
+                            </div>
+                        </div>
+                        <div class="category" data-category="TownHouse">
+                            <div class="bg-wallpaper-of-aprtment">
+                                <h6>Starting</h6>
+                                <p>AED 2.0M</p>
+                            </div>
+                            <div>
+                                <div class="ine-one-line"><i class="fa-solid fa-square"></i>
+                                    <p>TOWNHOUSE</p>
+                                </div>
+                                <h2>WOODY</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum
+                                    aliquid sed quos modi! Accusamus aliquid sequi dicta facilis ipsum
+                                    ex esse doloribus? Molestiae ipsam eveniet ex modi doloremque
+                                    mollitia.</p>
+                                <button class="sec-3-btn-5" onclick="location.href='apartments.html'">Read
+                                    More...</button>
+                            </div>
+                        </div>
+                        <div class="category" data-category="Apartments">
+                            <div class="bg-wallpaper-of-aprtment">
+                                <h6>Starting</h6>
+                                <p>AED 2.0M</p>
+                            </div>
+                            <div>
+                                <div class="ine-one-line"><i class="fa-solid fa-square"></i>
+                                    <p>APARTMENTS</p>
+                                </div>
+                                <h2>AL HABTOOR TOWER</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum
+                                    aliquid sed quos modi! Accusamus aliquid sequi dicta facilis ipsum
+                                    ex esse doloribus? Molestiae ipsam eveniet ex modi doloremque
+                                    mollitia.</p>
+                                <button class="sec-3-btn-5" onclick="location.href='apartments.html'">Read
+                                    More...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="move-btn move-btn-right" onclick="moveCategories('right')">&gt;</button>
+    </section>
+    <section id="Home-page-section-2">
+        <div class="bio">
+            <h3>TESTIMONIAL</h3>
+            <i class="fa-brands fa-squarespace"></i>
+            <p>Dubai's sole real estate company with an exclusive collection of all 5-star reviews</p>
+        </div>
+        <div class="reviews-slider-container">
+            <div class="reviews-slider">
+                <div class="person-review">
+                    <img src="./images/review.jpg" alt="">
+                    <h6>Bhushan Pawar</h6>
+                    <p>2023-03-22</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h6 class="review-content">These guys are awesome! Even after knowing that I am not a potential
+                        buyer as of now they responded patiently to all my queries. Will surely buy a property in Dubai
+                        soon through them.</h6>
+                    <p class="read-more">Read more...</p>
+                </div>
+                <div class="person-review">
+                    <img src="./images/review.jpg" alt="">
+                    <h6>Bhushan Pawar</h6>
+                    <p>2023-03-22</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h6 class="review-content">These guys are awesome! Even after knowing that I am not a potential
+                        buyer as of now they responded patiently to all my queries. Will surely buy a property in Dubai
+                        soon through them.</h6>
+                    <p class="read-more">Read more...</p>
+                </div>
+                <div class="person-review">
+                    <img src="./images/review.jpg" alt="">
+                    <h6>Bhushan Pawar</h6>
+                    <p>2023-03-22</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h6 class="review-content">These guys are awesome! Even after knowing that I am not a potential
+                        buyer as of now they responded patiently to all my queries. Will surely buy a property in Dubai
+                        soon through them.</h6>
+                    <p class="read-more">Read more...</p>
+                </div>
+                <div class="person-review">
+                    <img src="./images/review.jpg" alt="">
+                    <h6>Bhushan Pawar</h6>
+                    <p>2023-03-22</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h6 class="review-content">These guys are awesome! Even after knowing that I am not a potential
+                        buyer as of now they responded patiently to all my queries. Will surely buy a property in Dubai
+                        soon through them.</h6>
+                    <p class="read-more">Read more...</p>
+                </div>
+                <div class="person-review">
+                    <img src="./images/review.jpg" alt="">
+                    <h6>Bhushan Pawar</h6>
+                    <p>2023-03-22</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h6 class="review-content">These guys are awesome! Even after knowing that I am not a potential
+                        buyer as of now they responded patiently to all my queries. Will surely buy a property in Dubai
+                        soon through them.</h6>
+                    <p class="read-more">Read more...</p>
+                </div>
+                <div class="person-review">
+                    <img src="./images/review.jpg" alt="">
+                    <h6>Bhushan Pawar</h6>
+                    <p>2023-03-22</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h6 class="review-content">These guys are awesome! Even after knowing that I am not a potential
+                        buyer as of now they responded patiently to all my queries. Will surely buy a property in Dubai
+                        soon through them.</h6>
+                    <p class="read-more">Read more...</p>
+                </div>
+                <div class="person-review">
+                    <img src="./images/review.jpg" alt="">
+                    <h6>Bhushan Pawar</h6>
+                    <p>2023-03-22</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h6 class="review-content">These guys are awesome! Even after knowing that I am not a potential
+                        buyer as of now they responded patiently to all my queries. Will surely buy a property in Dubai
+                        soon through them.</h6>
+                    <p class="read-more">Read more...</p>
+                </div>
+                <div class="person-review">
+                    <img src="./images/review.jpg" alt="">
+                    <h6>Bhushan Pawar</h6>
+                    <p>2023-03-22</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h6 class="review-content">These guys are awesome! Even after knowing that I am not a potential
+                        buyer as of now they responded patiently to all my queries. Will surely buy a property in Dubai
+                        soon through them.</h6>
+                    <p class="read-more">Read more...</p>
+                </div>
+                <button class="slider-button prev-button">&#8249;</button>
+                <button class="slider-button next-button">&#8250;</button>
+            </div>
+            <div class="sec-2-btn-1">
+                <button onclick="openInNewTab()">SEE MORE REVIEWS</button>
+            </div>
+            <div class="detail">
+                <div class="detail-part1">
+                    <div>
+                        <h4>300+</h4>
+                        <p>CLIENTS</p>
+                    </div>
+                    <div>
+                        <p>We are proud to have garnered over 300 organic potential happy clients through our social
+                            media presence.</p>
+                    </div>
+                </div>
+                <div class="detail-part2">
+                    <div>
+                        <h4>100+</h4>
+                        <p>PROJECTS</p>
+                    </div>
+                    <div>
+                        <p>We have had the pleasure of collaborating with highly respected developers who possess an
+                            exceptional stronghold in the market</p>
+                    </div>
+                </div>
+                <div class="detail-part3">
+                    <div>
+                        <h4>90+</h4>
+                        <p>REVIEWS</p>
+                    </div>
+                    <div>
+                        <p>Our Google page boasts 90+ 5-star reviews and we are one of the most followed pages on social
+                            media</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="Home-page-section-6">
+        <div class="content">
+            <div class="text-container">
+                <h1>WE’RE HIRING</h1>
+                <p>We welcome those with a passion for Dubai real estate to start their journey with us.</p>
+            </div>
+            <div class="button-container">
+                <a href="contact.html"><button>Contact Now</button></a>
+            </div>
+        </div>
+    </section>
+    <section id="Home-page-section-9">
+        <div>
+            <h4>KEEP IN TOUCH</h4>
+            <div class="social-media-links">
+                <a href="https://www.instagram.com/YourPageName" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/YourPageName" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/YourTwitterHandle" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/user/YourChannelName" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/YourProfileName" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>VISIT US</h5>
+                <p>Office Address: Sidra Tower - 11th Floor - Sheikh Zayed Rd - Al Sufouh 1 - Dubai</p>
+                <p>Phone: <a href="tel:+97148866265">+971 4 886 6265</a></p>
+                <p>Email: <a href="mailto:connect@revorealty.ae">connect@revorealty.ae</a></p>
+            </div>
+            <div class="footer-section">
+                <h5>OPENING HOURS</h5>
+                <p>Monday - Saturday:</p>
+                <p>10:00AM - 07:00PM</p>
+            </div>
+            <div class="footer-section">
+                <p>We do things differently at Revo. We don’t chase the high commission projects, overpromise and
+                    underdeliver, or add unnecessary fees.</p>
+            </div>
+            <div class="footer-section">
+                <h5>LINKS</h5>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section subscribe">
+                <input type="email" placeholder="Your Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2023 Revo Realty. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
